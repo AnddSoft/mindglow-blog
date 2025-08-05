@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindGlow - Tu espacio de bienestar y crecimiento personal | Blog #1 en Salud Mental</title>
+    <meta name="description" content="Descubre las mejores técnicas de autocuidado, mindfulness y crecimiento personal. Transforma tu vida con nuestros artículos, recursos gratuitos y comunidad de apoyo.">
+    <meta name="keywords" content="autocuidado, salud mental, mindfulness, bienestar, crecimiento personal, ansiedad, autoestima, rutinas saludables">
+    <meta name="author" content="MindGlow Team">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="MindGlow - Tu espacio de bienestar y crecimiento personal">
+    <meta property="og:description" content="Transforma tu vida con las mejores técnicas de autocuidado y mindfulness">
+    <meta property="og:image" content="https://mindglow.com/images/og-image.jpg">
+    <meta property="og:url" content="https://mindglow.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MindGlow - Bienestar y Crecimiento Personal">
+    <meta name="twitter:description" content="Transforma tu vida con autocuidado y mindfulness">
+    <meta name="twitter:image" content="https://mindglow.com/images/twitter-card.jpg">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "MindGlow",
+      "description": "Blog de bienestar mental y crecimiento personal",
+      "url": "https://mindglow.com",
+      "publisher": {
+        "@type": "Organization",
+        "name": "MindGlow",
+        "logo": "https://mindglow.com/logo.png"
+      }
+    }
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, #ff6b9d, #c44569);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #ff6b9d;
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b9d, #ff8a80);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 107, 157, 0.4);
+        }
+        
+        /* Main Content */
+        main {
+            background: white;
+            margin-top: 2rem;
+            border-radius: 20px 20px 0 0;
+            min-height: 80vh;
+        }
+        
+        /* Trending Topics */
+        .trending {
+            padding: 3rem 0;
+            background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
+            margin: 2rem 0;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+        }
+        
+        .trending h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .trending-topics {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .topic-tag {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .topic-tag:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Blog Grid */
+        .blog-section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2d3748;
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .blog-image {
+            height: 200px;
+            background: linear-gradient(45deg, #ff6b9d, #c44569);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            position: relative;
+        }
+        
+        .blog-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6b9d, #ffa726);
+        }
+        
+        .blog-content {
+            padding: 1.5rem;
+        }
+        
+        .blog-category {
+            display: inline-block;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .category-mental { background: #667eea; }
+        .category-lifestyle { background: #fd79a8; }
+        .category-relaciones { background: #fdcb6e; }
+        .category-autocuidado { background: #55a3ff; }
+        .category-productividad { background: #26de81; }
+        .category-mindfulness { background: #a55eea; }
+        
+        .blog-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #2d3748;
+            line-height: 1.4;
+        }
+        
+        .blog-excerpt {
+            color: #718096;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #a0aec0;
+        }
+        
+        .read-time {
+            background: #f7fafc;
+            padding: 0.2rem 0.6rem;
+            border-radius: 10px;
+        }
+        
+        /* Google AdSense Ad Slots */
+        .adsense-banner {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+        }
+        
+        .adsense-sidebar {
+            position: sticky;
+            top: 120px;
+            margin-left: 2rem;
+        }
+        
+        /* Affiliate Marketing Sections */
+        .affiliate-product {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+            border-left: 4px solid #4ecdc4;
+        }
+        
+        .affiliate-badge {
+            background: #4ecdc4;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            display: inline-block;
+            margin-bottom: 1rem;
+            font-size: 0.8rem;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #2d3748;
+            margin: 0.5rem 0;
+        }
+        
+        .product-link {
+            background: #ff6b9d;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+        
+        .product-link:hover {
+            background: #e55a87;
+        }
+        
+        /* Newsletter */
+        .newsletter {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            border-radius: 15px;
+            margin: 3rem 0;
+        }
+        
+        .newsletter h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            max-width: 400px;
+            margin: 2rem auto 0;
+            gap: 1rem;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+        }
+        
+        .newsletter-form button {
+            background: #ff6b9d;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+        
+        .newsletter-form button:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Article Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow-y: auto;
+        }
+        
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 2rem;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover {
+            color: #000;
+        }
+        
+        .article-content {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .article-content h2 {
+            color: #2d3748;
+            margin: 2rem 0 1rem 0;
+        }
+        
+        .article-content h3 {
+            color: #4a5568;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+        
+        .article-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .article-content ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+        
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2d3748;
+            color: white;
+            padding: 3rem 0 1rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #ff6b9d;
+        }
+        
+        .footer-section a {
+            color: #e2e8f0;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: #ff6b9d;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .adsense-sidebar {
+                display: none;
+            }
+        }
+        
+        /* Floating Action */
+        .floating-action {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(45deg, #ff6b9d, #fd79a8);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 20px rgba(255, 107, 157, 0.4);
+            cursor: pointer;
+            transition: transform 0.3s;
+            z-index: 1000;
+        }
+        
+        .floating-action:hover {
+            transform: scale(1.1);
+        }
+        
+        /* SEO Optimizations */
+        .breadcrumb {
+            background: #f8f9fa;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #6c757d;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            color: #ff6b9d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">Inicio</a> > <a href="/blog">Blog</a> > Bienestar y Salud Mental
+        </div>
+    </div>
+
+    <header>
+        <nav class="container">
+            <div class="logo">✨ MindGlow</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#comunidad">Comunidad</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>🌟 Tu mejor versión te espera</h1>
+            <p>Descubre el poder del autocuidado, mindfulness y crecimiento personal</p>
+            <a href="#newsletter" class="cta-button">Únete a 25,000+ lectoras</a>
+        </div>
+    </section>
+
+    <main>
+        <!-- Google AdSense Banner -->
+        <div class="adsense-banner">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXX"
+                 data-ad-slot="1234567890"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+
+        <div class="trending">
+            <div class="container">
+                <h2>🔥 Trending ahora</h2>
+                <div class="trending-topics">
+                    <span class="topic-tag" onclick="filterByTag('selfcare')">#SelfCare2025</span>
+                    <span class="topic-tag" onclick="filterByTag('mental-health')">#MentalHealthMatters</span>
+                    <span class="topic-tag" onclick="filterByTag('mindfulness')">#MindfulLiving</span>
+                    <span class="topic-tag" onclick="filterByTag('boundaries')">#HealthyBoundaries</span>
+                    <span class="topic-tag" onclick="filterByTag('morning-routine')">#MorningRoutine</span>
+                    <span class="topic-tag" onclick="filterByTag('toxic-relationships')">#ToxicRelationships</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="blog-section" id="blog">
+            <div class="container">
+                <h2 class="section-title">Artículos que cambiarán tu vida</h2>
+                
+                <div class="blog-grid">
+                    <article class="blog-card" onclick="openPost('morning-routine')">
+                        <div class="blog-image">☀️</div>
+                        <div class="blog-content">
+                            <span class="blog-category category-lifestyle">Lifestyle</span>
+                            <h3 class="blog-title">La rutina matutina de 5 minutos que transformó mi vida</h3>
+                            <p class="blog-excerpt">Descubre cómo una rutina súper simple puede aumentar tu energía, productividad y bienestar mental desde el primer día...</p>
+                            <div class="blog-meta">
+                                <span>12 enero 2025</span>
+                                <span class="read-time">4 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="openPost('toxic-relationships')">
+                        <div class="blog-image">💔</div>
+                        <div class="blog-content">
+                            <span class="blog-category category-relaciones">Relaciones</span>
+                            <h3 class="blog-title">7 señales de que estás en una relación tóxica (y cómo salir)</h3>
+                            <p class="blog-excerpt">Identifica los patrones destructivos y aprende a establecer límites saludables para proteger tu bienestar emocional...</p>
+                            <div class="blog-meta">
+                                <span>10 enero 2025</span>
+                                <span class="read-time">8 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Affiliate Marketing Section -->
+                    <div class="affiliate-product">
+                        <span class="affiliate-badge">Productos Recomendados</span>
+                        <h3>🧘‍♀️ Herramientas para tu bienestar</h3>
+                        <p>Productos cuidadosamente seleccionados que uso y recomiendo para mejorar tu rutina de autocuidado</p>
+                        
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <h4>Headspace Premium</h4>
+                                <div class="product-price">$9.99/mes</div>
+                                <p>App #1 de meditación</p>
+                                <a href="https://headspace.sjv.io/mindglow" class="product-link" target="_blank" rel="nofollow">Probar Gratis</a>
+                            </div>
+                            <div class="product-card">
+                                <h4>Journal de Gratitud</h4>
+                                <div class="product-price">$24.99</div>
+                                <p>5 minutos diarios de reflexión</p>
+                                <a href="https://amazon.com/dp/B08XXX?tag=mindglow-20" class="product-link" target="_blank" rel="nofollow">Comprar</a>
+                            </div>
+                            <div class="product-card">
+                                <h4>Aceites Esenciales Set</h4>
+                                <div class="product-price">$39.99</div>
+                                <p>Aromaterapia para relajación</p>
+                                <a href="https://amazon.com/dp/B09XXX?tag=mindglow-20" class="product-link" target="_blank" rel="nofollow">Ver Ofertas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <article class="blog-card" onclick="openPost('anxiety-tips')">
+                        <div class="blog-image">🌱</div>
+                        <div class="blog-content">
+                            <span class="blog-category category-mental">Salud Mental</span>
+                            <h3 class="blog-title">10 técnicas científicas para calmar la ansiedad al instante</h3>
+                            <p class="blog-excerpt">Métodos probados por psicólogos que puedes usar en cualquier momento para reducir el estrés y la ansiedad...</p>
+                            <div class="blog-meta">
+                                <span>8 enero 2025</span>
+                                <span class="read-time">6 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="openPost('self-love')">
+                        <div class="blog-image">💖</div>
+                        <div class="blog-content">
+                            <span class="blog-category category-autocuidado">Autocuidado</span>
+                            <h3 class="blog-title">Cómo aprender a amarte a ti misma: guía completa de self-love</h3>
+                            <p class="blog-excerpt">El camino hacia el amor propio no es fácil, pero es posible. Aquí tienes ejercicios prácticos para comenzar hoy...</p>
+                            <div class="blog-meta">
+                                <span>5 enero 2025</span>
+                                <span class="read-time">12 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="openPost('productivity-burnout')">
+                        <div class="blog-image">⚡</div>
+                        <div class="blog-content">
+                            <span class="blog-category category-productividad">Productividad</span>
+                            <h3 class="blog-title">Escapé del burnout y ahora trabajo 6 horas al día</h3>
+                            <p class="blog-excerpt">Mi historia personal de cómo recuperé el equilibrio vida-trabajo y aumenté mi productividad trabajando menos...</p>
+                            <div class="blog-meta">
+                                <span>3 enero 2025</span>
+                                <span class="read-time">10 min</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Google AdSense In-Content -->
+                <div class="adsense-banner">
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-XXXXXXXXXX"
+                         data-ad-slot="9876543210"></ins>
+                </div>
+
+                <div class="affiliate-product">
+                    <span class="affiliate-badge">Curso Recomendado</span>
+                    <h3>🌟 Programa de Transformación Personal</h3>
+                    <p>El curso online que ha ayudado a más de 10,000 personas a transformar su vida. Metodología probada paso a paso.</p>
+                    <a href="https://curso-transformacion.com?ref=mindglow" class="cta-button" target="_blank" rel="nofollow">Ver Curso (50% descuento)</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter" id="newsletter">
+            <div class="container">
+                <h2>💌 Tu dosis semanal de inspiración</h2>
+                <p>Recibe contenido exclusivo, tips de bienestar y recursos gratuitos cada semana</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" id="email-input" placeholder="tu@email.com" required>
+                    <button type="submit">Unirme ✨</button>
+                </form>
+                <p style="margin-top: 1rem; opacity: 0.8; font-size: 0.9rem;">
+                    +25,000 mujeres ya transformaron su vida 🌟
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Article Modal -->
+    <div id="article-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-content-area">
+                <!-- Article content will be loaded here -->
+            </div>
+            
+            <!-- In-article ads -->
+            <div class="adsense-banner">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-fb+5w+4e-db+86"
+                     data-ad-client="ca-pub-XXXXXXXXXX"
+                     data-ad-slot="1111111111"></ins>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MindGlow</h3>
+                    <p>Tu espacio seguro para crecer, sanar y brillar ✨</p>
+                    <p><strong>Contacto:</strong> hola@mindglow.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Recursos Gratuitos</h3>
+                    <a href="/recursos/guias-autocuidado">Guías de Autocuidado</a>
+                    <a href="/recursos/meditaciones">Meditaciones Guiadas</a>
+                    <a href="/recursos/journaling">Journaling Prompts</a>
+                    <a href="/recursos/playlist">Playlist de Relajación</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <a href="https://instagram.com/mindglow_es" target="_blank">Instagram (100K followers)</a>
+                    <a href="https://tiktok.com/@mindglow_es" target="_blank">TikTok (500K followers)</a>
+                    <a href="https://youtube.com/@mindglow" target="_blank">YouTube</a>
+                    <a href="https://pinterest.com/mindglow_es" target="_blank">Pinterest</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <a href="/politica-privacidad">Política de Privacidad</a>
+                    <a href="/terminos-uso">Términos de Uso</a>
+                    <a href="/cookies">Política de Cookies</a>
+                    <a href="/divulgacion-afiliados">Divulgación de Afiliados</a>
+                </div>
+            </div>
+            <p>&copy; 2025 MindGlow. Creando espacios seguros para el crecimiento personal.</p>
+        </div>
+    </footer>
+
+    <div class="floating-action" title="Únete a nuestra comunidad">
+        💬
+    </div>
+
+    <!-- Sidebar Ad (Desktop only) -->
+    <div class="adsense-sidebar">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXX"
+             data-ad-slot="2222222222"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+    </div>
+
+    <script>
+        // Real article content
+        const articles = {
+            'morning-routine': {
+                title: 'La rutina matutina de 5 minutos que transformó mi vida',
+                content: `
+                    <h1>La rutina matutina de 5 minutos que transformó mi vida</h1>
+                    
+                    <p>Durante años luché con las mañanas. Me despertaba cansada, sin energía y constantemente llegaba tarde a todo. Hasta que descubrí esta rutina súper simple que cambió completamente mi perspectiva.</p>
+                    
+                    <h2>¿Por qué solo 5 minutos?</h2>
+                    <p>La clave no está en hacer una rutina perfecta de 2 horas como ves en YouTube. La magia está en la <strong>consistencia</strong>. Es mejor hacer 5 minutos todos los días que 1 hora una vez por semana.</p>
+                    
+                    <h2>Mi rutina de 5 minutos:</h2>
+                    <h3>Minuto 1: Respiración consciente</h3>
+                    <ul>
+                        <li>3 respiraciones profundas</li>
+                        <li>Inhala por 4 segundos, mantén por 4, exhala por 6</li>
+                        <li>Esto activa tu sistema nervioso parasimpático</li>
+                    </ul>
+                    
+                    <h3>Minuto 2-3: Gratitud</h3>
+                    <ul>
+                        <li>Escribe 3 cosas por las que estás agradecida</li>
+                        <li>Pueden ser súper simples: "mi cama cómoda", "el café caliente"</li>
+                        <li>Esto rewirea tu cerebro hacia lo positivo</li>
+                    </ul>
+                    
+                    <h3>Minuto 4-5: Intención del día</h3>
+                    <ul>
+                        <li>Define UNA cosa importante que quieres lograr</li>
+                        <li>Visualízate completándola exitosamente</li>
+                        <li>Esto te da dirección y propósito</li>
+                    </ul>
+                    
+                    <h2>Los resultados después de 30 días:</h2>
+                    <p>✨ <strong>Más energía:</strong> Me despierto naturalmente más alerta<br>
+                    ✨ <strong>Mejor humor:</strong> Comenzar con gratitud cambia todo mi día<br>
+                    ✨ <strong>Más productiva:</strong> Tener una intención clara me mantiene enfocada<br>
+                    ✨ <strong>Menos ansiedad:</strong> Las mañanas ya no son caóticas</p>
+                    
+                    <h2>Tips para mantener la consistencia:</h2>
+                    <ul>
+                        <li><strong>Hazlo ANTES de revisar tu teléfono</strong> - Esto es crucial</li>
+                        <li><strong>Ten un journal al lado de tu cama</strong> - Sin excusas</li>
+                        <li><strong>Empieza con 3 minutos</strong> si 5 te parecen mucho</li>
+                        <li><strong>No te castigues si fallas un día</strong> - Solo continúa al siguiente</li>
+                    </ul>
+                    
+                    <p><em>¿Lista para probar? Comentame cómo te va después de una semana. Estaré leyendo todos los comentarios 💕</em></p>
+                `
+            },
+            'toxic-relationships': {
+                title: '7 señales de que estás en una relación tóxica (y cómo salir)',
+                content: `
+                    <h1>7 señales de que estás en una relación tóxica (y cómo salir)</h1>
+                    
+                    <p>Si estás leyendo esto, probablemente algo en tu relación no se siente bien. Trust your gut - tu intuición raramente se equivoca. Aquí están las señales más importantes y cómo actuar.</p>
+                    
+                    <h2>🚩 Señal #1: Te sientes caminando en cáscaras de huevo</h2>
+                    <p>Constantemente te preocupas por su reacción. Cambias tu comportamiento, tus palabras, incluso tu ropa para evitar conflictos. <strong>Esto no es amor, es control.</strong></p>
+                    
+                    <h2>🚩 Señal #2: Aislamiento de amigos y familia</h2>
+                    <p>Sutilmente (o no tan sutilmente) te alejan de tu círculo de apoyo. Comentarios como "tus amigas no me caen bien" o "tu familia no me entiende" son red flags enormes.</p>
+                    
+                    <h2>🚩 Señal #3: Gaslighting constante</h2>
+                    <p>Te hacen dudar de tu realidad. "Nunca dije eso", "estás exagerando", "eres muy sensible". Si constantemente cuestionas tu memoria y percepción, esto es manipulación.</p>
+                    
+                    <h2>🚩 Señal #4: Control financiero</h2>
+                    <p>Monitorean tus gastos, te impiden trabajar, o controlan todo el dinero. La independencia financiera es crucial para la libertad personal.</p>
+                    
+                    <h2>🚩 Señal #5: Celos extremos y posesividad</h2>
+                    <p>No puedes hablar con otros sin interrogatorios. Revisan tu teléfono, te siguen, o te acusan constantemente de infidelidad sin razón.</p>
+                    
+                    <h2>🚩 Señal #6: Tu autoestima está por el suelo</h2>
+                    <p>Antes eras segura de ti misma, ahora dudas de todo. Una relación sana debería elevarte, no destruirte.</p>
+                    
+                    <h2>🚩 Señal #7: Ciclo de abuso</h2>
+                    <p>Tensión → Explosión → Luna de miel → Repetir. Prometen cambiar después de cada episodio, pero el patrón nunca se rompe.</p>
+                    
+                    <h2>Cómo salir (de forma segura):</h2>
+                    
+                    <h3>1. Reconoce que no es tu culpa</h3>
+                    <p>Nada de lo que hiciste o dijiste justifica el abuso. Punto.</p>
+                    
+                    <h3>2. Busca apoyo</h3>
+                    <p>Línea Nacional de Violencia Doméstica: 1-800-799-7233<br>
+                    No estás sola. Hay recursos y personas que quieren ayudarte.</p>
+                    
+                    <h3>3. Haz un plan de seguridad</h3>
+                    <ul>
+                        <li>Guarda documentos importantes en lugar seguro</li>
+                        <li>Ten dinero de emergencia guardado</li>
+                        <li>Identifica lugares seguros donde ir</li>
+                        <li>Informa a personas de confianza sobre tu situación</li>
+                    </ul>
+                    
+                    <h3>4. No lo hagas sola</h3>
+                    <p>Profesionales entrenados pueden ayudarte a crear un plan específico para tu situación.</p>
+                    
+                    <p><strong>Recuerda:</strong> Mereces ser amada, respetada y tratada con dignidad. Siempre. 💕</p>
+                `
+            },
+            'anxiety-tips': {
+                title: '10 técnicas científicas para calmar la ansiedad al instante',
+                content: `
+                    <h1>10 técnicas científicas para calmar la ansiedad al instante</h1>
+                    
+                    <p>La ansiedad puede sentirse abrumadora, pero existen técnicas probadas científicamente que pueden ayudarte en el momento. Aquí están mis favoritas que realmente funcionan.</p>
+                    
+                    <h2>1. Técnica 5-4-3-2-1 (Grounding)</h2>
+                    <p>Cuando sientes que la ansiedad toma control:</p>
+                    <ul>
+                        <li><strong>5</strong> cosas que puedes ver</li>
+                        <li><strong>4</strong> cosas que puedes tocar</li>
+                        <li><strong>3</strong> cosas que puedes oír</li>
+                        <li><strong>2</strong> cosas que puedes oler</li>
+                        <li><strong>1</strong> cosa que puedes saborear</li>
+                    </ul>
+                    <p>Esto te trae de vuelta al presente y calma tu sistema nervioso.</p>
+                    
+                    <h2>2. Respiración 4-7-8</h2>
+                    <p>Desarrollada por el Dr. Andrew Weil:</p>
+                    <ul>
+                        <li>Inhala por 4 segundos</li>
+                        <li>Mantén por 7 segundos</li>
+                        <li>Exhala por 8 segundos</li>
+                        <li>Repite 4 veces</li>
+                    </ul>
+                    <p>Activa tu respuesta de relajación natural.</p>
+                    
+                    <h2>3. Hielo en las muñecas</h2>
+                    <p>Suena raro, pero funciona. El frío estimula el nervio vago, que ayuda a regular tu respuesta al estrés. Mantén cubitos de hielo en tus muñecas por 30 segundos.</p>
+                    
+                    <h2>4. Progressive Muscle Relaxation</h2>
+                    <p>Tensa y relaja cada grupo muscular por 5 segundos, empezando por los dedos de los pies y subiendo hasta la cabeza. Esto libera tensión física acumulada.</p>
+                    
+                    <h2>5. Agua fría en la cara</h2>
+                    <p>Activa el "dive response", que automáticamente calma tu sistema nervioso. Salpica agua fría en tu cara o usa una compresa fría.</p>
+                    
+                    <h2>6. Mantra personal</h2>
+                    <p>Crea una frase que te calme y repítela. Ejemplos:</p>
+                    <ul>
+                        <li>"Esto también pasará"</li>
+                        <li>"Estoy segura en este momento"</li>
+                        <li>"Puedo manejar esto"</li>
+                    </ul>
+                    
+                    <h2>7. Movimiento suave</h2>
+                    <p>El ejercicio libera endorfinas naturales. No necesitas un workout intenso - caminar, estirarte o bailar por 5 minutos puede ayudar mucho.</p>
+                    
+                    <h2>8. Aceites esenciales</h2>
+                    <p>La lavanda, bergamota y manzanilla han mostrado efectos calmantes en estudios. Mantén un roll-on en tu bolsa para emergencias.</p>
+                    
+                    <h2>9. Técnica STOP</h2>
+                    <ul>
+                        <li><strong>S</strong>top - Para lo que estás haciendo</li>
+                        <li><strong>T</strong>ake a breath - Respira profundamente</li>
+                        <li><strong>O</strong>bserve - ¿Qué está pasando en tu cuerpo/mente?</li>
+                        <li><strong>P</strong>roceed - Continúa con intención</li>
+                    </ul>
+                    
+                    <h2>10. Journaling de pensamientos</h2>
+                    <p>Escribe tus pensamientos ansiosos, luego pregúntate:</p>
+                    <ul>
+                        <li>¿Es esto realista?</li>
+                        <li>¿Qué evidencia tengo?</li>
+                        <li>¿Qué le diría a una amiga en esta situación?</li>
+                    </ul>
+                    
+                    <h2>Cuándo buscar ayuda profesional:</h2>
+                    <p>Si la ansiedad interfiere con tu vida diaria, trabajo o relaciones, es momento de hablar con un profesional. No hay nada malo en pedir ayuda.</p>
+                    
+                    <p><em>¿Cuál técnica vas a probar primero? Cuéntame en los comentarios 💙</em></p>
+                `
+            }
+        };
+
+        // Newsletter signup
+        document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email-input').value;
+            
+            // Here you would integrate with your email service (Mailchimp, ConvertKit, etc.)
+            // For demo purposes:
+            alert(`¡Bienvenida a la familia MindGlow! 💖\n\nTu primer email con recursos gratuitos llegará pronto a ${email}\n\n🎁 Bonus: Descarga gratis nuestra "Guía de 21 días de Autocuidado"`);
+            
+            // Send to your email service
+            fetch('/api/newsletter-signup', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: email })
+            });
+            
+            document.getElementById('email-input').value = '';
+        });
+
+        // Article modal functionality
+        function openPost(postId) {
+            const modal = document.getElementById('article-modal');
+            const contentArea = document.getElementById('modal-content-area');
+            
+            if (articles[postId]) {
+                contentArea.innerHTML = articles[postId].content;
+                modal.style.display = 'block';
+                
+                // Track pageview for analytics
+                gtag('config', 'GA_MEASUREMENT_ID', {
+                    page_title: articles[postId].title,
+                    page_location: window.location.href + '#' + postId
+                });
+                
+                // Load ads in modal
+                setTimeout(() => {
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                }, 100);
+            }
+        }
+
+        // Close modal
+        document.querySelector('.close').addEventListener('click', function() {
+            document.getElementById('article-modal').style.display = 'none';
+        });
+
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('article-modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Filter by tag functionality
+        function filterByTag(tag) {
+            // This would filter articles by tag in a real implementation
+            alert(`Filtrando artículos por: #${tag}\n\nEsta funcionalidad mostraría todos los artículos relacionados con ${tag}.`);
+        }
+
+        // Affiliate link tracking
+        document.querySelectorAll('a[rel="nofollow"]').forEach(link => {
+            link.addEventListener('click', function() {
+                const productName = this.closest('.product-card')?.querySelector('h4')?.textContent || 'Unknown';
+                
+                // Track affiliate clicks
+                gtag('event', 'affiliate_click', {
+                    'product_name': productName,
+                    'link_url': this.href
+                });
+            });
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Floating action
+        document.querySelector('.floating-action').addEventListener('click', function() {
+            alert('💕 Únete a nuestra comunidad de +10,000 mujeres que se apoyan mutuamente\n\n🌟 Comparte tus logros\n💬 Encuentra apoyo\n🎯 Mantente motivada\n📚 Acceso a recursos exclusivos\n\n¡Te esperamos en Discord!');
+        });
+
+        // Initialize AdSense
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        
+        // Load more ads after page load
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            }, 1000);
+        });
+
+        // SEO: Add structured data for articles
+        function addArticleStructuredData(articleId, title, excerpt) {
+            const script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.text = JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": title,
+                "description": excerpt,
+                "author": {
+                    "@type": "Person",
+                    "name": "MindGlow Team"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "MindGlow",
+                    "logo": "https://mindglow.com/logo.png"
+                },
+                "datePublished": "2025-01-12",
+                "url": `https://mindglow.com/blog/${articleId}`
+            });
+            document.head.appendChild(script);
+        }
+    </script>
+</body>
+</html>
